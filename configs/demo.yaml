@@ -1,0 +1,20 @@
+run_name: XHS Copy Eval · Offline Replay Demo
+dataset_path: data/xhs_eval.jsonl
+rubric_path: rubrics/xhs_copy_v1.yaml
+
+generator:
+  type: replay
+  name: candidate-model/demo-v1
+  responses_path: fixtures/demo_generations.jsonl
+
+judge:
+  type: replay
+  name: judge-model/calibrated-replay-v1
+  responses_path: fixtures/demo_judge_responses.jsonl
+
+outputs:
+  predictions: artifacts/demo_predictions.jsonl
+  metrics: artifacts/demo_metrics.json
+  judgements: artifacts/demo_judgements.jsonl
+  report: reports/demo_report.md
+

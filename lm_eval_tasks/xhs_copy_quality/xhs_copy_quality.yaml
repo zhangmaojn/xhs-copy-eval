@@ -1,0 +1,30 @@
+task: xhs_copy_quality
+task_alias: XHS Chinese Copy Quality
+tag:
+  - chinese_generation
+  - social_copy
+dataset_path: json
+dataset_name: null
+dataset_kwargs:
+  data_files:
+    test: data/xhs_eval.jsonl
+test_split: test
+output_type: generate_until
+doc_to_text: !function utils.doc_to_text
+doc_to_target: "{{reference}}"
+process_results: !function utils.process_results
+generation_kwargs:
+  max_gen_toks: 512
+  temperature: 0.0
+  do_sample: false
+  until:
+    - "\n\n"
+metric_list:
+  - metric: char_rouge_l
+    aggregation: mean
+    higher_is_better: true
+  - metric: constraint_score
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0

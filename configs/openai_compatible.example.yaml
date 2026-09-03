@@ -1,0 +1,28 @@
+run_name: XHS Copy Eval · API Run
+dataset_path: data/xhs_eval.jsonl
+rubric_path: rubrics/xhs_copy_v1.yaml
+
+generator:
+  type: openai_compatible
+  model: ${LLM_MODEL}
+  base_url: ${LLM_BASE_URL}
+  api_key_env: LLM_API_KEY
+  temperature: 0.2
+  max_tokens: 700
+  max_retries: 2
+
+judge:
+  type: openai_compatible
+  model: ${JUDGE_MODEL}
+  base_url: ${JUDGE_BASE_URL}
+  api_key_env: JUDGE_API_KEY
+  temperature: 0
+  max_tokens: 700
+  response_format_json: true
+
+outputs:
+  predictions: artifacts/api_predictions.jsonl
+  metrics: artifacts/api_metrics.json
+  judgements: artifacts/api_judgements.jsonl
+  report: reports/api_report.md
+

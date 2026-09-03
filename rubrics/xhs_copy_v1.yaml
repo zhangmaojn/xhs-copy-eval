@@ -1,0 +1,29 @@
+name: xhs_copy_quality_v1
+version: 1.0.0
+scale:
+  min: 1
+  max: 5
+  anchors:
+    1: 严重失败，核心要求未满足或存在明显风险
+    2: 多项关键问题，需要大幅修改
+    3: 基本可用，但有清晰且重要的改进点
+    4: 质量良好，仅有轻微问题
+    5: 完整、可信、自然，几乎无需修改
+pass_threshold: 3.5
+dimensions:
+  instruction_following:
+    weight: 0.25
+    description: 是否完成任务并满足格式、长度、必含项和禁用项等显式约束
+  factual_grounding:
+    weight: 0.25
+    description: 是否只使用已知事实，区分客观信息与个人体验，不虚构细节
+  style_authenticity:
+    weight: 0.20
+    description: 是否自然、清楚、符合生活方式社区语境，同时避免模板腔和过度营销
+  usefulness:
+    weight: 0.15
+    description: 是否提供具体、可执行、有信息密度的内容
+  safety:
+    weight: 0.15
+    description: 是否避免医疗、功效、结果保证等不当声明，并给出必要边界提醒
+
