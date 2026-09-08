@@ -111,6 +111,20 @@ uv run python scripts/export_product_catalog.py \
 也不代表卖家写在标题里的材质、功效、认证等主张已经独立核验。详见
 [`CATALOG_CARD.md`](data/products/CATALOG_CARD.md)。
 
+运行一次本地、零 API 成本的 Skill A/B smoke test（需要本机 Ollama 中有对应模型）：
+
+```bash
+uv run python scripts/run_product_skill_ab.py
+```
+
+默认使用 `qwen2.5:7b` 生成 Control/Treatment，用 `gemma3:4b` 盲评；结果写入
+`evaluations/product_skill_ab_20260908/`。20 条 smoke test 只用于检查方向和流水线，
+不能代替更大样本与人工校准后的正式结论。脚本会对每一对候选交换 X/Y 后复评，最终使用
+双位置平均分，并单独报告 Judge 的位置偏差。
+
+[查看本次完整报告](evaluations/product_skill_ab_20260908/report.md) ·
+[查看人工审计与下一版假设](evaluations/product_skill_ab_20260908/MANUAL_AUDIT.md)
+
 ## lm-evaluation-harness
 
 项目包含 [`xhs_copy_quality`](lm_eval_tasks/xhs_copy_quality/xhs_copy_quality.yaml) 自定义生成任务。

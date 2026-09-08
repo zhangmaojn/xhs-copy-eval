@@ -1,0 +1,806 @@
+{
+  "control": [
+    {
+      "id": "product-1601514610024",
+      "char_count": 66,
+      "rouge_l_f1": 0.2645,
+      "char_bleu": 0.0799,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.62-2.65": true,
+        "required:最低起订量：1 piece": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": false,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601441523766",
+      "char_count": 145,
+      "rouge_l_f1": 0.3301,
+      "char_bleu": 0.3356,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.98": true,
+        "required:最低起订量：2 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1600930008170",
+      "char_count": 99,
+      "rouge_l_f1": 0.3134,
+      "char_bleu": 0.1957,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.78-2.90": true,
+        "required:最低起订量：36 sets": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": false,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601723929817",
+      "char_count": 155,
+      "rouge_l_f1": 0.4371,
+      "char_bleu": 0.353,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.30-1.45": true,
+        "required:最低起订量：10 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601832352631",
+      "char_count": 172,
+      "rouge_l_f1": 0.4113,
+      "char_bleu": 0.4251,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$1-5": true,
+        "required:最低起订量：1,000 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601617846699",
+      "char_count": 177,
+      "rouge_l_f1": 0.4889,
+      "char_bleu": 0.4011,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$2.80-2.90": true,
+        "required:最低起订量：100 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601644929490",
+      "char_count": 128,
+      "rouge_l_f1": 0.3973,
+      "char_bleu": 0.3368,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$26.10": true,
+        "required:最低起订量：1 piece": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601507784945",
+      "char_count": 168,
+      "rouge_l_f1": 0.3864,
+      "char_bleu": 0.4654,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$1.55-3": true,
+        "required:最低起订量：100 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1600288383756",
+      "char_count": 138,
+      "rouge_l_f1": 0.3937,
+      "char_bleu": 0.368,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$0.14-0.20": true,
+        "required:最低起订量：12 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601564756844",
+      "char_count": 122,
+      "rouge_l_f1": 0.2818,
+      "char_bleu": 0.1872,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$7-17.67": true,
+        "required:最低起订量：6 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601917660998",
+      "char_count": 146,
+      "rouge_l_f1": 0.5134,
+      "char_bleu": 0.3904,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$1.95-3.65": true,
+        "required:最低起订量：500 units": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1600691209388",
+      "char_count": 140,
+      "rouge_l_f1": 0.4954,
+      "char_bleu": 0.3711,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1.21-1.58": true,
+        "required:最低起订量：50 sets": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601821493195",
+      "char_count": 165,
+      "rouge_l_f1": 0.3678,
+      "char_bleu": 0.4004,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$2,656.72-4,447.77": true,
+        "required:最低起订量：1 set": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601645398364",
+      "char_count": 177,
+      "rouge_l_f1": 0.4365,
+      "char_bleu": 0.3929,
+      "constraint_score": 1.0,
+      "constraint_details": {
+        "required:US$0.63-0.68": true,
+        "required:最低起订量：100 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601760658819",
+      "char_count": 54,
+      "rouge_l_f1": 0.2087,
+      "char_bleu": 0.0287,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$4.50": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": false,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1600837335178",
+      "char_count": 152,
+      "rouge_l_f1": 0.4753,
+      "char_bleu": 0.3869,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$0.09": true,
+        "required:最低起订量：100 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601317435914",
+      "char_count": 125,
+      "rouge_l_f1": 0.2039,
+      "char_bleu": 0.1344,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$5.87-6.50": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601627653408",
+      "char_count": 137,
+      "rouge_l_f1": 0.3766,
+      "char_bleu": 0.3509,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1.15": true,
+        "required:最低起订量：10 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601637353360",
+      "char_count": 125,
+      "rouge_l_f1": 0.3724,
+      "char_bleu": 0.2746,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.77": true,
+        "required:最低起订量：2 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1600792602713",
+      "char_count": 157,
+      "rouge_l_f1": 0.4242,
+      "char_bleu": 0.3507,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1.95-2.35": true,
+        "required:最低起订量：10 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    }
+  ],
+  "treatment": [
+    {
+      "id": "product-1601514610024",
+      "char_count": 146,
+      "rouge_l_f1": 0.3416,
+      "char_bleu": 0.3321,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.62-2.65": true,
+        "required:最低起订量：1 piece": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601441523766",
+      "char_count": 162,
+      "rouge_l_f1": 0.411,
+      "char_bleu": 0.3465,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1.98": true,
+        "required:最低起订量：2 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1600930008170",
+      "char_count": 95,
+      "rouge_l_f1": 0.2879,
+      "char_bleu": 0.153,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.78-2.90": true,
+        "required:最低起订量：36 sets": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": false,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601723929817",
+      "char_count": 140,
+      "rouge_l_f1": 0.4451,
+      "char_bleu": 0.3433,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.30-1.45": true,
+        "required:最低起订量：10 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601832352631",
+      "char_count": 140,
+      "rouge_l_f1": 0.5263,
+      "char_bleu": 0.4042,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1-5": true,
+        "required:最低起订量：1,000 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601617846699",
+      "char_count": 144,
+      "rouge_l_f1": 0.263,
+      "char_bleu": 0.1717,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$2.80-2.90": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601644929490",
+      "char_count": 126,
+      "rouge_l_f1": 0.3119,
+      "char_bleu": 0.3262,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$26.10": true,
+        "required:最低起订量：1 piece": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601507784945",
+      "char_count": 193,
+      "rouge_l_f1": 0.3342,
+      "char_bleu": 0.4226,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.55-3": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1600288383756",
+      "char_count": 151,
+      "rouge_l_f1": 0.4451,
+      "char_bleu": 0.3658,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$0.14-0.20": true,
+        "required:最低起订量：12 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1601564756844",
+      "char_count": 157,
+      "rouge_l_f1": 0.4356,
+      "char_bleu": 0.3583,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$7-17.67": true,
+        "required:最低起订量：6 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601917660998",
+      "char_count": 235,
+      "rouge_l_f1": 0.3396,
+      "char_bleu": 0.3491,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1.95-3.65": true,
+        "required:最低起订量：500 units": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1600691209388",
+      "char_count": 103,
+      "rouge_l_f1": 0.2657,
+      "char_bleu": 0.1384,
+      "constraint_score": 0.7273,
+      "constraint_details": {
+        "required:US$1.21-1.58": true,
+        "required:最低起订量：50 sets": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": false,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601821493195",
+      "char_count": 183,
+      "rouge_l_f1": 0.3934,
+      "char_bleu": 0.4521,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$2,656.72-4,447.77": true,
+        "required:最低起订量：1 set": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601645398364",
+      "char_count": 179,
+      "rouge_l_f1": 0.4396,
+      "char_bleu": 0.3718,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$0.63-0.68": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601760658819",
+      "char_count": 206,
+      "rouge_l_f1": 0.3298,
+      "char_bleu": 0.2977,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$4.50": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": true
+      }
+    },
+    {
+      "id": "product-1600837335178",
+      "char_count": 130,
+      "rouge_l_f1": 0.2781,
+      "char_bleu": 0.1626,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$0.09": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601317435914",
+      "char_count": 184,
+      "rouge_l_f1": 0.2865,
+      "char_bleu": 0.3697,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$5.87-6.50": true,
+        "required:最低起订量：100 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601627653408",
+      "char_count": 173,
+      "rouge_l_f1": 0.436,
+      "char_bleu": 0.3515,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.15": true,
+        "required:最低起订量：10 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1601637353360",
+      "char_count": 292,
+      "rouge_l_f1": 0.3151,
+      "char_bleu": 0.1939,
+      "constraint_score": 0.8182,
+      "constraint_details": {
+        "required:US$1.77": true,
+        "required:最低起订量：2 pieces": false,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    },
+    {
+      "id": "product-1600792602713",
+      "char_count": 168,
+      "rouge_l_f1": 0.4633,
+      "char_bleu": 0.3936,
+      "constraint_score": 0.9091,
+      "constraint_details": {
+        "required:US$1.95-2.35": true,
+        "required:最低起订量：10 pieces": true,
+        "forbidden:保证有效": true,
+        "forbidden:全网最低": true,
+        "forbidden:人人适合": true,
+        "forbidden:亲测有效": true,
+        "forbidden:闭眼入不踩雷": true,
+        "min_chars:120": true,
+        "max_chars:360": true,
+        "min_hashtags:2": true,
+        "max_hashtags:4": false
+      }
+    }
+  ]
+}

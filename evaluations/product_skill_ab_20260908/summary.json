@@ -1,0 +1,91 @@
+{
+  "sample_count": 20,
+  "hypothesis": "在相同商品事实、模型和输出约束下，加载文案 Skill 会提高平台适配、信息价值和主张边界，同时不降低事实一致性。",
+  "control": {
+    "mean_overall": 4.095,
+    "pass_rate": 1.0,
+    "constraint_score": 0.9136,
+    "constraint_failures": {
+      "max_hashtags:4": 7,
+      "min_chars:120": 3,
+      "required:最低起订量：2 pieces": 2,
+      "required:最低起订量：10 pieces": 2,
+      "required:最低起订量：100 pieces": 2,
+      "required:最低起订量：1 piece": 1,
+      "required:最低起订量：36 sets": 1,
+      "required:最低起订量：50 sets": 1
+    },
+    "capture_context_mentions": 0,
+    "mean_latency_ms": 24331.854
+  },
+  "treatment": {
+    "mean_overall": 4.155,
+    "pass_rate": 1.0,
+    "constraint_score": 0.85,
+    "constraint_failures": {
+      "max_hashtags:4": 18,
+      "required:最低起订量：100 pieces": 6,
+      "min_chars:120": 2,
+      "required:最低起订量：10 pieces": 2,
+      "required:最低起订量：1 piece": 1,
+      "required:最低起订量：12 pieces": 1,
+      "required:最低起订量：6 pieces": 1,
+      "required:最低起订量：50 sets": 1,
+      "required:最低起订量：2 pieces": 1
+    },
+    "capture_context_mentions": 2,
+    "mean_latency_ms": 19698.453
+  },
+  "delta": {
+    "mean_overall": 0.06,
+    "paired_bootstrap_95_ci": [
+      0.0356,
+      0.0869
+    ]
+  },
+  "paired_outcomes": {
+    "treatment_wins": 6,
+    "ties": 14,
+    "control_wins": 0
+  },
+  "dimension_means": {
+    "instruction_following": {
+      "control": 4.25,
+      "treatment": 4.25
+    },
+    "factual_grounding": {
+      "control": 4.2375,
+      "treatment": 4.275
+    },
+    "usefulness": {
+      "control": 3.9375,
+      "treatment": 4.125
+    },
+    "safety": {
+      "control": 4.25,
+      "treatment": 4.25
+    },
+    "style_authenticity": {
+      "control": 3.725,
+      "treatment": 3.8375
+    }
+  },
+  "guardrail": {
+    "passed": false,
+    "decision": "revise_and_retest"
+  },
+  "judge_parse_errors": 0,
+  "position_bias_audit": {
+    "pass_1": {
+      "x_wins": 20,
+      "y_wins": 0,
+      "ties": 0
+    },
+    "pass_2_reversed": {
+      "x_wins": 20,
+      "y_wins": 0,
+      "ties": 0
+    },
+    "correction": "final scores average each candidate across X and Y positions"
+  }
+}
