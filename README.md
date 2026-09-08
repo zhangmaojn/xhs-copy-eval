@@ -1,16 +1,19 @@
 # XHS Copy Eval
 
-一个可复现的中文生活方式文案端到端评测项目：自建 18 条小型评测集，完成模型生成、
+一个可复现的中文生活方式文案端到端评测项目：自建 18 条小型评测集，并加入 200 条
+可追溯的真实商品列表快照，完成模型生成、
 自动指标、LLM-as-Judge、badcase 归因和 Markdown 报告，并提供
 `lm-evaluation-harness` 自定义 task。
 
-> 这是用于评测工程学习的合成数据集，与小红书平台无隶属或合作关系，不包含抓取的用户内容。
+> 项目与小红书平台无隶属或合作关系，不抓取小红书用户内容。真实商品库只保存公开商家列表
+> 页的短文本元数据与来源链接；卖家主张不等于项目方已验证事实。
 
 [查看离线演示报告](reports/demo_report.md) ·
 [一页评测方法论](docs/methodology.md) ·
 [5 分钟面试自述](docs/interview_story.md) ·
 [标准任务 smoke 记录](docs/benchmark_runs.md) ·
-[数据集说明](data/DATASET_CARD.md)
+[评测集说明](data/DATASET_CARD.md) ·
+[商品库说明](data/products/CATALOG_CARD.md)
 
 ## 为什么这个项目值得展示
 
@@ -29,6 +32,8 @@ git clone https://github.com/zhangmaojn/xhs-copy-eval.git
 cd xhs-copy-eval
 uv sync --extra dev
 uv run xhs-eval validate --dataset data/xhs_eval.jsonl
+uv run xhs-eval catalog-validate \
+  --catalog data/products/alibaba_products_20260908.jsonl
 uv run xhs-eval run --config configs/demo.yaml
 ```
 
@@ -74,6 +79,37 @@ uv run xhs-eval run --config configs/local-api.yaml
 ```
 
 生产评测建议候选模型与 Judge 使用不同模型家族，并先用人工双标样本校准 Judge，减少自我偏好。
+
+## 真实商品快照库
+
+`data/products/alibaba_products_20260908.jsonl` 包含 200 个 Alibaba.com 自然搜索结果，
+覆盖珠宝、茶具、香薰、运动、美容、家居、宠物、咖啡、数码等 20 类，每类 10 个。
+每条记录保留真实商品 ID、名称、价格/区间、最低起订量、供应商、卡片卖点、评分、图片 URL、
+原始链接与采集时间。
+
+按商品 ID 生成安全的、事实与卖家主张分离的 Skill 输入：
+
+```bash
+uv run xhs-eval product-brief \
+  --catalog data/products/alibaba_products_20260908.jsonl \
+  --product-id 1601514610024
+```
+
+可复用 Skill 源码也已纳入 [`skills/xiaohongshu-ins-copy`](skills/xiaohongshu-ins-copy/SKILL.md)。
+本机安装版已经连接这份只读商品快照；其他 Codex 环境可以把该目录复制到自己的 Skills
+目录后使用。
+
+导出供人工浏览的 Excel 兼容 CSV：
+
+```bash
+uv run python scripts/export_product_catalog.py \
+  data/products/alibaba_products_20260908.jsonl \
+  --output data/products/alibaba_products_20260908.csv
+```
+
+这里的“真实”表示商品 ID 和展示字段来自带时间戳的公开页面快照；不代表价格永久有效，
+也不代表卖家写在标题里的材质、功效、认证等主张已经独立核验。详见
+[`CATALOG_CARD.md`](data/products/CATALOG_CARD.md)。
 
 ## lm-evaluation-harness
 
@@ -149,6 +185,7 @@ make demo
 ```text
 src/xhs_eval/              核心评测包
 data/                      JSONL 评测集与数据卡
+data/products/             真实商品快照、CSV 与商品库说明
 rubrics/                   Judge 量表
 configs/                   离线/API 运行配置
 fixtures/                  可复现的候选与 Judge 回放
